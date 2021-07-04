@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .heart{
+        margin: 100px;
+        position: relative;
+        /* border: 1px solid black; */
+        display: inline-block;
+        animation: xxx 1s infinite;
+
+    }
+    @keyframes xxx{
+        0%{
+            transform: none;
+        }
+        50%{
+            transform: scale(2);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    .heart>div{
+        border: 1px solid red;
+    }
+    .left,.right,.bottom{
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        background-color: red;
+       
+    }
+    .left{
+    
+        top: -75%;
+        right: 50%;
+        
+            position: absolute;
+        transform: rotate(45deg) translateX(20px) translateY(10px); /*让正方形旋转角度，然后调整位置*/
+        border-radius: 50%; 
+        background-color: red;
+    }
+    .right{
+        position: absolute;
+        bottom: 50%;
+        left: 100%;
+        transform: rotate(45deg) translateX(-18px) translateY(30px); /*让正方形旋转角度，然后调整位置*/
+        border-radius: 50%;
+       background-color: red;
+    }
+   
+</style>
+<body>
+    <div class="heart">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </div>
+</body>
+</html>
