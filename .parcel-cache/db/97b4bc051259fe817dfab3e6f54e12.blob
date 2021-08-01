@@ -1,0 +1,40 @@
+const $siteList=$('.siteList')
+const $lastLi=$siteList.find('li.last')//到li里找类为last的元素
+
+//用数组
+const hashMap=[
+    {logo:'A' ,logoType:'text',url:'https://www.acfun.cn' },
+    {logo: './images/bilibili.png',logoType:'img',url:'https://www.bilibili.com/' },
+]
+hashMap.forEach(node=>{
+    const $li=$(`
+    <li>
+    <a href="${node.url}">
+      <div class="site">
+        <div class="logo">${node.logo}</div>
+        <div class="link">${node.url}</div>
+      </div>
+    </a>
+  </li>
+    `).insertBefore($lastLi)//将新元素插到lastLi前面
+})
+
+//监听点击事件
+$('.addButton')
+    .on('click',()=>{
+        let url=window.prompt('请输入你要的网址')//在网页端弹出一个方框让你输入,并返回你输入的内容
+        if(url.indexOf('http')!==0){//如果输入的内容里没http
+           url='https://'+url
+        }
+        console.log(url)
+        const $li=$(`
+        <li>
+          <a href="${url}">
+            <div class="site">
+              <div class="logo">${url[0]}</div>
+              <div class="link">${url}</div>
+            </div>
+          </a>
+        </li>
+        `).insertBefore($lastLi)//将新元素插到lastLi前面
+    })
