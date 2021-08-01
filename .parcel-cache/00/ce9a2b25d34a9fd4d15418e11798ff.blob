@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover"
-    />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <title>前航网站</title>
-    <link rel="stylesheet" href="style.css" />
-    <style type="text/css">
+    <link rel="stylesheet" href="6da2fe2dba8083fb5edd32b622833cfc">
+    <style data-parcel-key="76cc8a30a9a8bd784635177bd4a87d23">
       .icon {
         width: 1em;
         height: 1em;
@@ -22,7 +19,7 @@
   <body>
     <header class="globalHeader">
       <form class="searchForm" method="GET" action="https://www.baidu.com/s">
-        <input name="wd" type="text" />
+        <input name="wd" type="text">
         <button type="submit">搜索</button>
       </form>
     </header>
@@ -31,7 +28,7 @@
       <ul class="siteList">
         <!--Acfun导航栏-->
         <li>
-          <a href="https://www.acfun.cn">
+          <a href="09a758732e03f1eef531ebe76a90bc03">
             <div class="site">
               <div class="logo">A</div>
               <div class="link">acfun.cn</div>
@@ -40,10 +37,10 @@
         </li>
         <!--B站导航栏-->
         <li>
-          <a href="https://www.bilibili.com/">
+          <a href="f17b9bef3b9283ded5250a8eba44cfef">
             <div class="site">
               <div class="logo">
-                <img src="./images/bilibili.png" alt="" />
+                <img src="33352d6d4ff781576713421743c6a24b" alt="">
               </div>
               <div class="link">bilibili.com</div>
             </div>
@@ -64,8 +61,8 @@
         </li>
       </ul>
     </main>
-    <script src="//at.alicdn.com/t/font_2714447_z7uvpl3sf0b.js"></script>
-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="main.js"></script>
+    <script src="2f5927ccf366144d179599d4c6f9f80e"></script>
+    <script src="0c9ac9458fae28f0e39e04f892155619"></script>
+    <script src="984f86fd2fe8b87e7d68207c1b493f05"></script>
   </body>
 </html>

@@ -1,0 +1,5 @@
+//监听点击事件
+$('.addButton')
+    .on('click',()=>
+    {console.log('我呗点击了')}
+    )

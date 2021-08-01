@@ -7,7 +7,7 @@ $('.addButton')
         }
         console.log(url)
         const $siteList=$('.siteList')
-        const $lastLi=$siteList.find('li.last')//到li里找类为last的元素
+        $siteList.find('li.last')
         const $li=$(`
         <li>
           <a href="${url}">
@@ -17,5 +17,5 @@ $('.addButton')
             </div>
           </a>
         </li>
-        `).insertBefore($lastLi)//将新元素插到lastLi前面
+        `).appendTo($siteList)//将新元素插进siteList里
     })

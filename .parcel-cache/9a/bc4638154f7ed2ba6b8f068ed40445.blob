@@ -1,0 +1,6 @@
+//监听点击事件
+$('.addButton')
+    .on('click',()=>{
+        window.prompt('请输入你要的网址')
+    }
+    )
